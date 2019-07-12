@@ -9,13 +9,29 @@
         tools:showIn="@layout/activity_main"
         tools:context=".MainActivity">
 
-    <TextView
+    <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Primeira tela!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:inputType="numberPassword"
+            android:ems="10"
+            android:id="@+id/editText"
+            app:layout_constraintTop_toBottomOf="@+id/editText2"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            tools:layout_editor_absoluteY="162dp" android:id="@+id/editText2"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="enviar"
+            android:layout_width="395dp"
+            android:layout_height="46dp"
+            android:id="@+id/button" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/editText"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
